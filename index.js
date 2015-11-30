@@ -98,7 +98,6 @@ function imageisux(abspath, enableWebp) {
                     },
                     webp: enableWebp
                 };
-                console.log(data)
                 needle.post('http://zhitu.isux.us/index.php/preview/upload_file', data, {
                     multipart: true
                 }, function(err, resp, body) {
